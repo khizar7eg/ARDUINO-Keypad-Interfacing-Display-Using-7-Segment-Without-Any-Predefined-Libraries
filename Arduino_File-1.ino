@@ -1,3 +1,6 @@
+// Khizar Hayat 
+// GitHub (khizar7eg)
+
 #define segA 7 // Connecting Segment A to PIN 7.
 #define segB 8 // Connecting Segment B to PIN 8.
 #define segC 9 // Connecting Segment C to PIN 9.
@@ -13,12 +16,10 @@
 #define Col2 5 // Connecting Keypad Column2 to PIN 5.
 #define Col3 6 // Connecting Keypad Column3 to PIN 6.
 
-
 int COL1,COL2,COL3;
 int ROW1,ROW2,ROW3,ROW4;
 int del=600;
 
-// Variable Checking the State of the Button.
 void setup()
 {
 
@@ -30,12 +31,12 @@ pinMode(i,OUTPUT);
 for (int i=4;i<7;i++)
 {
 pinMode(i,OUTPUT);
-// Taking all Pins from 4-7 as INPUT for KEYPAD.
+// Taking all Pins from 4-7 as OUTPUT for KEYPAD.
 }
 for (int i=0;i<4;i++)
 {
 pinMode(i,OUTPUT);
-// Taking all Pins from 0-3 as INPUT for KEYPAD.
+// Taking all Pins from 0-3 as OUTPUT for KEYPAD.
 }
 
 
@@ -46,7 +47,6 @@ void loop()
   r2();
   r3();
   r4(); 
-  
 }
 
 void r1() {
